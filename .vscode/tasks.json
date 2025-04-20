@@ -1,0 +1,30 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "type": "shell",
+            "label": "Build Project",
+            "command": "C:\\msys64\\ucrt64\\bin\\g++.exe",
+            "args": [
+                "-fdiagnostics-color=always",
+                "-g",
+                "C:\\Users\\gleag\\OneDrive\\Desktop\\CornerGrocerProject2\\driver.cpp",
+                "C:\\Users\\gleag\\OneDrive\\Desktop\\CornerGrocerProject2\\Menu.cpp",
+                "C:\\Users\\gleag\\OneDrive\\Desktop\\CornerGrocerProject2\\ProductInventory.cpp",
+                "C:\\Users\\gleag\\OneDrive\\Desktop\\CornerGrocerProject2\\ProductFileHandler.cpp",
+                "C:\\Users\\gleag\\OneDrive\\Desktop\\CornerGrocerProject2\\Product.cpp",
+                "-o",
+                "C:\\Users\\gleag\\OneDrive\\Desktop\\CornerGrocerProject2\\CornerGrocerProject2.exe"
+            ],
+            "options": {
+                "cwd": "${workspaceFolder}"
+            },
+            "problemMatcher": ["$gcc"],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "detail": "Build the entire project using g++."
+        }
+    ]
+}

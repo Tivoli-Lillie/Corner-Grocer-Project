@@ -1,0 +1,21 @@
+cornerGrocer: driver.o Menu.o Product.o ProductFileHandler.o ProductInventory.o
+    g++ -o driver driver.o Menu.o ProductInventory.o ProductFileHandler.o Product.o
+
+
+driver.o: driver.cpp
+    g++ -c driver.cpp
+
+Menu.o: Menu.cpp
+    g++ -c Menu.cpp
+
+Product.o: Product.cpp
+    g++ -c Product.cpp
+
+ProductFileHandler.o: ProductFileHandler.cpp
+    g++ -c ProductFileHandler.cpp
+
+ProductInventory.o: ProductInventory.cpp
+    g++ -c ProductInventory.cpp
+
+clean:
+    rm *.o cornerGrocer
