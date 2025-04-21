@@ -62,43 +62,42 @@ void Menu::processUserInput(int userInput, ProductInventory& inventory) { // Fun
             std::cout << "Enter a product name: "; // Prompt for product name
             std::getline(std::cin, productName); // Get product name
             
+            std::cout << std::endl;
+
             // Convert input to lowercase
-            std::cout << "Converting input to correct format..."; // For debug
+            //std::cout << "Converting input to correct format..."; // For debugging
             std::string titleCaseName = titleCaseInput(productName);
-            std::cout << titleCaseName << std::endl;
+            //std::cout << titleCaseName << std::endl;
             
             if (inventory.checkForProduct(titleCaseName)) { // compare input and map key as same case
-                std::cout <<  titleCaseName << " " << inventory.findProductfrequency(titleCaseName) << std::endl; // Output "item frequency"
-            
+                std::cout <<  titleCaseName << " " << inventory.findProductfrequency(titleCaseName) << std::endl;
+                
             } else { // Product not found in inventory
-                if (!productName.empty() && productName.back() == 's') { // If input exists and ends with 's'
                     std::cout << "There's no record of " << productName << " being purchased." << std::endl;
-                } else {
-                    std::cout << "There's no record of " << productName << " being purchased." << std::endl;
-                }
             }
+            std::cout << std::endl; 
             break;
         }
         case 2: { // Print all products and frequencies
-            //TODO: implement function
-            inventory.printAllFrequency(); // Print all products and frequencies
+            inventory.printAllFrequency("list"); // Print all products and frequencies
             std::cout << std::endl;
             break;
         }
         case 3: {// View histogram of all product frequencies
-            //TODO: implement function
+            inventory.printAllFrequency("histogram"); // Print histogram
             break;
         }
         case 4: { // Exit
+            std::cout << std::endl; 
             std::cout << "Exiting program..." << std::endl;
             exit(0); // Exit program
         }
         default: {// If invalid input
+            std::cout << std::endl; 
             std::cout << "Please enter a valid menu option (1-4)" << std::endl; // Prompt for valid input
             break;
         }
     }
-    std::cout << std::endl;
 }
 
 std::string titleCaseInput(std::string input) { // Function to convert userInput to lowercase

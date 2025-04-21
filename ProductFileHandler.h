@@ -19,6 +19,8 @@ public:
     void setFileName(std::string fileName) { // Function to set file name
         this->fileName = fileName;
     };
+
+    void writeFile(const std::string& dataFile, const ProductInventory& inventory); // Function to write data to file
 };
 
 #endif

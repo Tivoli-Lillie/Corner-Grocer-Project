@@ -109,6 +109,10 @@
     "variant": "cpp",
     "map": "cpp",
     "cstdarg": "cpp",
-    "fstream": "cpp"
+    "fstream": "cpp",
+    "codecvt": "cpp",
+    "ratio": "cpp",
+    "iomanip": "cpp",
+    "sstream": "cpp"
   }
 }
