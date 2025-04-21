@@ -13,7 +13,7 @@
  *  Date: 4-17-2025
  *  Author: Tivoli Lillie
  * 
- * This program reads in a list of purchased products and outputs the frequecy of items
+ * This program reads in a list of purchased products and outputs the frequency of items
  * as a list or as a histogram. Users can search for a specific product or print all products frequencies.
  * 
  */
