@@ -1,5 +1,5 @@
 cornerGrocer: driver.o Menu.o Product.o ProductFileHandler.o ProductInventory.o
-    g++ -o driver driver.o Menu.o ProductInventory.o ProductFileHandler.o Product.o
+    g++ -o CornerGrocer driver.o Menu.o ProductInventory.o ProductFileHandler.o Product.o
 
 
 driver.o: driver.cpp
