@@ -1,3 +1,13 @@
 # Corner-Grocer
 A program to read in a grocery store sales log and output the frequency of sold products.
-=======
+
+This program, especially with a little more added, could be helpful for tracking customer trends and deciding on what inventory to stock or discontinue. It would be nice to search for a list of products instead of all at once or just one.
+
+I think that I did well at adding enough error handling for the program to run in most cases. However, I’m know that it can be broken.
+The UML I originally made to base the program on no longer holds true. I ended up having to add a lot of missing functions that I should have started my design with. Such as some basic getters for the Inventory class. I realized that a lot of my functions overlap, and I think, if I spend a little more time on this, I can better modularize this program and do away with these redundant functions. For instance, checkForProduct and findProductFrequency are redundant, and they also affect the functionality of other things as well like AddProduct.
+
+The most challenging part initially was I/O for files. The few times that I have worked with this have not left me very confident. I learned a lot throughout making this program and found a lot of helpful resources, particularly on YouTube. A helpful resource that I referenced in the making of this project was a book I had sitting on my shelf for a long time, Murach’s C++ Programming guide. It is an old, but very helpful book and I wish that I remembered it sooner. A lot of the projects throughout this book, tips, and skills learned from it are directly applicable to this project.
+
+The skills that I have learned in this project will be applicable to basically every coding project I will work on in the future. I/O, error handling, working with pointers, OOP, and modularity. I am fairly new to coding in general but also realized how much I do not understand about computers themselves and the internal workings. It’s so easy to just type a line of code or push a button without really considering all the steps that are happening behind the scenes but gaining an understanding in this is really helpful. When you understand how something really works, it’s a lot easier to plan and make effective decisions.
+
+I tried to add comments for most things, some are maybe unnecessary. I am not great with words and I am sure that some of the comments could give a little more detail. I have never collaborated on code- These comments helped me think, remember things and make decisions while coding but I think I could have made them more valuable to someone who might work with this code later on.
